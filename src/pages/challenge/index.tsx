@@ -1,25 +1,11 @@
-import React from 'react';
+import React from "react";
+import { challenges } from "../../data/challenge";
 
 const ChallengePage: React.FC = () => {
-  const challenges = [
-    {
-      title: 'Build a Mini Wallet',
-      description: 'Create a simple crypto wallet app and submit your repo.',
-      bounty: '500 MYR',
-    },
-    {
-      title: 'Frontend UI Challenge',
-      description: 'Design a responsive dashboard using Tailwind or AntD.',
-      bounty: '300 MYR',
-    },
-  ];
-
   return (
     <section className="px-10 py-20 max-w-5xl mx-auto">
-      <h2 className="text-4xl font-bold mb-10 text-center">
-        Bounty Challenges
-      </h2>
-      <div className="grid gap-8 md:grid-cols-2">
+      <h2 className="text-4xl font-bold mb-10 text-center">Bounty Challenges</h2>
+      <div className="grid gap-8 md:grid-cols-2 mb-10">
         {challenges.map((ch, idx) => (
           <div
             key={idx}

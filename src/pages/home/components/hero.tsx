@@ -5,7 +5,11 @@ const Hero: React.FC = () => {
   const navigate = useNavigate();
 
   const goToChallenges = () => {
-    navigate("/challenge"); // Redirect to Challenge Page
+    navigate("/challenge"); // Internal page
+  };
+
+  const joinExternal = () => {
+    window.open("https://x.com/i/communities/1983062242292822298", "_blank");
   };
 
   return (
@@ -17,15 +21,15 @@ const Hero: React.FC = () => {
         A community for builders, dreamers, and tech rebels shaping the future of Malaysia.
       </p>
       <div className="mt-10 flex justify-center gap-4">
-        {/* Original Join button */}
+        {/* Redirect to X communities */}
         <button
           className="bg-pink-600 hover:bg-pink-700 px-8 py-4 rounded-xl text-lg font-bold"
-          onClick={goToChallenges} // Optional: could also be for "Join"
+          onClick={joinExternal}
         >
           Join The Movement
         </button>
 
-        {/* New Redirection Button */}
+        {/* Redirect to Challenge Page */}
         <button
           className="bg-gray-700 hover:bg-gray-600 px-8 py-4 rounded-xl text-lg font-bold"
           onClick={goToChallenges}

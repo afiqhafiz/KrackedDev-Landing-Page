@@ -1,19 +1,16 @@
-import React from 'react';
-
-const techs = ['React', 'Node', 'Blockchain', 'DevOps', 'AI / ML', 'Mobile'];
+import React from "react";
+import { Tag } from "antd";
+import { techTags } from "../../../data/techTags";
 
 const TechTags: React.FC = () => {
   return (
-    <section className="text-center mb-20">
-      {techs.map((tech) => (
-        <span
-          key={tech}
-          className="inline-block bg-gray-700 text-white px-4 py-1 rounded-full m-1 text-sm"
-        >
-          {tech}
-        </span>
+    <div className="flex justify-center flex-wrap gap-3 mb-10">
+      {techTags.map((tag, idx) => (
+        <Tag key={idx} color="geekblue">
+          {tag}
+        </Tag>
       ))}
-    </section>
+    </div>
   );
 };
 
