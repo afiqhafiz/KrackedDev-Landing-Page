@@ -6,9 +6,9 @@ export interface Challenge {
 
 export const challenges: Challenge[] = [
     {
-        title: "Build a Mini Wallet",
-        description: "Create a simple crypto wallet app and submit your repo.",
-        bounty: "500 MYR",
+        title: "Craft an awesome landing page for “Kracked Devs”",
+        description: "The most creative + coolest concept claims the reward! Submit in the comment section",
+        bounty: "100 MYR",
     },
     {
         title: "Frontend UI Challenge",
@@ -16,8 +16,8 @@ export const challenges: Challenge[] = [
         bounty: "300 MYR",
     },
     {
-        title: "Open Source Contribution",
-        description: "Contribute to a Malaysian open-source project.",
-        bounty: "400 MYR",
+        title: "Coming Soon",
+        description: "Are you ready?",
+        bounty: "XXX MYR",
     },
 ];
