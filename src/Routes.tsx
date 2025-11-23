@@ -1,4 +1,3 @@
-import React from "react";
 import LandingPage from "./pages/home";
 import ChallengePage from "./pages/challenge";
 
