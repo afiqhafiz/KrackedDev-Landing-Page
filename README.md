@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing Page
+Hero section, features, tech tags, and community mission.
 
-Currently, two official plugins are available:
+Challenge Page
+Interactive bounty cards with neon glow, tilt hover animations, and particle background.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Navigation Bar
+Persistent header with easy page switching.
 
-## React Compiler
+Reusable Components
+Modular structure for Hero, Features, TechTags, NavBar, and Layout for maintainability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dummy Data Integration
+Features, tech tags, and challenges are all loaded from src/data for easy updates.
 
-## Expanding the ESLint configuration
+Concept Behind the Design
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The design demonstrates cyberpunk aesthetics and modern frontend interactivity:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Engaging Interactions
+Hover, tilt, and motion effects make the UI feel alive and interactive.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Cyberpunk Futuristic Theme
+Neon gradient glows, dark mode, and particle background evoke a high-tech underground dev scene.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Minimal but Memorable
+Clean layout with small details—animations, color accents, badges—create a strong impression.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Community-Oriented Messaging
+Features reflect the mission of Kracked Devs: share knowledge, empower devs, and have fun.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Typography & Color Palette
+Monospace fonts and neon cyan/pink/violet gradients highlight key content for a futuristic vibe.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Future Enhancements
+
+Add challenge submission form for users.
+
+Integrate authentication and developer profiles.
+
+Implement a real-time leaderboard for challenges.
+
+Expand interactive animations with scroll-based and parallax effects.
+
+Optimize responsive design and accessibility across all devices.
