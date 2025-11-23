@@ -1,18 +1,23 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/layout';
-import LandingPage from './pages/home';
-import ChallengePage from './pages/challenge';
+import React from "react";
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
+import { routes } from "./Routes";
+import Layout from "./components/layout";
+
+const AppRoutes: React.FC = () => {
+  const element = useRoutes(
+    routes.map((route) => ({
+      ...route,
+      element: <Layout>{route.element}</Layout>,
+    }))
+  );
+
+  return element;
+};
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/challenge" element={<ChallengePage />} />
-        </Routes>
-      </Layout>
+      <AppRoutes />
     </Router>
   );
 };
