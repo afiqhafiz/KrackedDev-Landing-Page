@@ -10,11 +10,12 @@
     "lib": ["DOM", "ESNext"],
     "jsx": "react-jsx",
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
-    "tsBuildInfoFile": "./build/cache/tsconfig.tsbuildinfo"
+    "tsBuildInfoFile": "./build/cache/tsconfig.tsbuildinfo",
+    "types": ["vite/client"]
   }
 }
