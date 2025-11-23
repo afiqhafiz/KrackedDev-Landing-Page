@@ -8,11 +8,11 @@ const Features: React.FC = () => {
       {features.map((feature: Feature, index: number) => (
         <div
           key={index}
-          className="p-6 bg-gray-800 rounded-xl border border-gray-700 hover:scale-105 transform transition"
+          className="p-6 bg-gray-900 border border-gray-800 rounded-xl transition-transform duration-200 hover:scale-105"
         >
-          <div className="text-5xl mb-4">{feature.icon}</div>
-          <h3 className="text-xl font-bold mb-2 text-white">{feature.title}</h3>
-          <p className="text-gray-300">{feature.description}</p>
+          <div className="text-5xl mb-4 text-cyan-400">{feature.icon}</div>
+          <h3 className="text-xl font-bold mb-2 text-white font-mono">{feature.title}</h3>
+          <p className="text-gray-400">{feature.description}</p>
         </div>
       ))}
     </section>
@@ -20,3 +20,4 @@ const Features: React.FC = () => {
 };
 
 export default Features;
+
